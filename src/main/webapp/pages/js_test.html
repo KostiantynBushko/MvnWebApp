@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1251">
+    <title></title>
+</head>
+
+<body>
+<h3>Пример использования JavaScript</h3>
+
+<form name="myForm">
+    <br><input type="text" name="Name" value="">
+    <br><input type="text" name="Email" value="">
+    <input type="button" value="Button" onclick="alert(calculate())">
+</form>
+
+<script>
+    document.write("This is javascript out");
+    function calculate() {
+        var a = document.myForm.Name.value;
+        var b = document.myForm.Email.value;
+        return parseInt(a) + parseInt(b);
+    }
+</script>
+
+</body>
+</html>
